@@ -1,4 +1,3 @@
-
 git_branch(){
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
@@ -57,7 +56,8 @@ alias history="history 0"
 # Prompt
 # PROMPT="%F{red}┌[%f%F{cyan}%m%f%F{red}]─[%f%F{yellow}%D{%H:%M-%d/%m}%f%F{red}]─[%f%F{magenta}%d%f%F{red}]%f"$'\n'"%F{red}└╼%f%F{green}$USER%f%F{yellow}$%f"
 
-prompt="%F{red}┌[%f%F{green}$USER%f%F{yellow}㉿%f%F{cyan}%m%f%F{red}]─[%f%F{magenta}%d%f%F{red}]%f%F{green}$(git_branch)%f"$'\n'"%F{red}└╼%f%F{yellow}$%f"
+prompt="%F{red}┌[%f%F{green}$USER%f%F{yellow}㉿%f%F{cyan}%m%f%F{red}]─[%B%F{magenta}%~%f%F{red}]%f%F{201}$(git_branch)%f"$'\n'"%F{red}└╼%f%F{yellow}$%f"
+
 # Export PATH$
 export PATH=~/.local/bin:/snap/bin:/usr/sandbox/:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:$PATH
 
@@ -142,10 +142,10 @@ fi
 # 	ls
 # }
 
-chpwd() exec zsh
+chpwd() {exec zsh}      # every time whene dir change it will refresh zsh terminal
 
 # alias
-alias ls='ls -lh --color=auto'
+# alias ls='ls -lh --color=auto'
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
 # alias grep='grep --color=auto'
@@ -154,17 +154,28 @@ alias vdir='vdir --color=auto'
 alias bat='batcat'
 
 # some more ls aliases
-alias ll='ls -l'
+# alias ll='ls -l'
 # alias la='ls -A'
-alias l='ls -CF'
-alias ll='ls -lh'
-alias la='ls -lha'
+# alias l='ls -CF'
+# alias ll='ls -lh'
+# alias la='ls -lha'
 alias em='emacs -nw'
 alias dd='dd status=progress'
 alias _='sudo'
 alias _i='sudo -i'
 alias please='sudo'
 alias fucking='sudo'
+
+### LS & TREE
+alias ls='ls --color=auto'
+alias ll='ls -l'
+alias lla='ls -la'
+alias la='ls -A'
+# alias l='ls -F'
+command -v lsd > /dev/null && alias ls='lsd --group-dirs first' && \
+	alias tree='lsd --tree'
+command -v colorls > /dev/null && alias ls='colorls --sd --gs' && \
+	alias tree='colorls --tree'
 
 #####################################################
 # Auto completion / suggestion
