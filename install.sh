@@ -8,5 +8,5 @@ if [ -f "$File" ]; then
 fi
 
 url='https://raw.githubusercontent.com/jakbin/myzsh/main/.zshrc'
-wget url
+wget -P /home/$USER/ $url
 echo ".zshrc file downloaded"
