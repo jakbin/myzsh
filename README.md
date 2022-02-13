@@ -16,10 +16,10 @@ Best vanilla theme for yuor zsh terminal (using without ohmyzsh).
 * [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
 * [lsd](https://github.com/Peltoche/lsd) or [colorls](https://github.com/athityakumar/colorls) ( i prefer colorls because its also support git changes)
 
-## install 
+## install
 
 ```sh
-wget 'https://raw.githubusercontent.com/jakbin/myzsh/main/install.sh' && bash install.sh
+wget 'https://raw.githubusercontent.com/jakbin/myzsh/main/install.sh' | sh
 ```
 
 ### Screenshts
