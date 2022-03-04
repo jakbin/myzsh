@@ -2,6 +2,8 @@
 
 Best vanilla theme for yuor zsh terminal (using without ohmyzsh).
 
+## Here for turmux [Termux-zsh](termux/README.md)
+
 ## Features
 
 * Dynamic git branch name

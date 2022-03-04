@@ -172,7 +172,7 @@ fi
 # alias ls='ls -lh --color=auto'
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
-# alias grep='grep --color=auto'
+alias grep='grep --color=auto'
 # alias fgrep='fgrep --color=auto'
 # alias egrep='egrep --color=auto'
 alias bat='batcat'
@@ -228,6 +228,6 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # require install package "time" sudo apt install time
 # alias time="/usr/bin/time -f '\t%E real,\t%U user,\t%S sys,\t%K amem,\t%M mmem'"
 
-# Display last command interminal
+# Display last command in terminal
 # echo -en "\e]2;jak Terminal\a"
 # preexec () { print -Pn "\e]0;$1 - jak Terminal\a" }
