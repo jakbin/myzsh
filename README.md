@@ -13,8 +13,8 @@ Best vanilla theme for yuor zsh terminal (using without ohmyzsh).
 ## Prerequisite
 
 * [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-* [zsh-autosuggestions](https://github.com/marlonrichert/zsh-autocomplete) (install from repo or github)
-* [zsh-autocomplete](https://github.com/zsh-users/zsh-autosuggestions) (install from repo or github)
+* [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) (install from repo or github)
+* [zsh-autocomplete](https://github.com/marlonrichert/zsh-autocomplete) (install from repo or github)
 * [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
 * [lsd](https://github.com/Peltoche/lsd) or [colorls](https://github.com/athityakumar/colorls) ( i prefer colorls because its also support git changes)
 
@@ -22,6 +22,12 @@ Best vanilla theme for yuor zsh terminal (using without ohmyzsh).
 
 ```sh
 wget 'https://raw.githubusercontent.com/jakbin/myzsh/main/install.sh' | sh
+```
+
+## install plugins
+
+```sh
+wget 'https://raw.githubusercontent.com/jakbin/myzsh/main/plugin-install.sh' | sh
 ```
 
 ### Screenshts
