@@ -9,6 +9,8 @@ Best vanilla theme for yuor zsh terminal (using without ohmyzsh).
 * Dynamic git branch name
 * Colourful outputs
 * file icons
+* command auto-suggestion
+* command auto-complete
 
 ## Prerequisite
 
