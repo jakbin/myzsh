@@ -7,5 +7,11 @@ Best zsh vanilla theme for yuor termux.
 ## install
 
 ```sh
-wget 'https://raw.githubusercontent.com/jakbin/myzsh/main/termux/install.sh' | sh
+curl 'https://raw.githubusercontent.com/jakbin/myzsh/main/termux/install.sh' | sh
+```
+
+## install plugins
+
+```sh
+wget 'https://raw.githubusercontent.com/jakbin/myzsh/main/termux/plugin-install.sh' && bash plugin-install.sh
 ```

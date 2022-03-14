@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # check if .zshrc file exits
 File=/home/$USER/.zshrc
 if [ -f "$File" ]; then

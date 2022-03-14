@@ -1,3 +1,5 @@
+#!/bin/bash
+
 intall-zsh-syntax-highlighting () {
 	mkdir ~/.zsh-ext
 	cd ~/.zsh-ext

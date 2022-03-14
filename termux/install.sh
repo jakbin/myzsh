@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # check if .zshrc file exits
 File=/data/data/com.termux/files/usr/etc/zshrc
 if [ -f "$File" ]; then
