@@ -5,7 +5,7 @@ intall-zsh-syntax-highlighting () {
 	cd ~/.zsh-ext
 	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 	cd /data/data/com.termux/files/usr/etc/
-	sed -i  "2isource ~/.zsh-ext/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+	sed -i  "2isource ~/.zsh-ext/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" zshrc
 }
 
 intall-zsh-autosuggestions () {
@@ -13,7 +13,7 @@ intall-zsh-autosuggestions () {
 	cd ~/.zsh-ext
 	git clone https://github.com/zsh-users/zsh-autosuggestions.git
 	cd /data/data/com.termux/files/usr/etc/
-	sed -i  "2isource ~/.zsh-ext/zsh-autosuggestions/zsh-autosuggestions.zsh"
+	sed -i  "2isource ~/.zsh-ext/zsh-autosuggestions/zsh-autosuggestions.zsh" zshrc
 }
 
 intall-zsh-autocomplete () {
@@ -21,7 +21,7 @@ intall-zsh-autocomplete () {
 	cd ~/.zsh-ext
 	git clone https://github.com/marlonrichert/zsh-autocomplete.git
 	cd /data/data/com.termux/files/usr/etc/
-	sed -i  "2isource ~/.zsh-ext/zsh-autocomplete/zsh-autocomplete.plugin.zsh"
+	sed -i  "2isource ~/.zsh-ext/zsh-autocomplete/zsh-autocomplete.plugin.zsh" zshrc
 }
 
 install-lsd () {

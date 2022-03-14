@@ -4,21 +4,24 @@ intall-zsh-syntax-highlighting () {
 	mkdir ~/.zsh-ext
 	cd ~/.zsh-ext
 	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-	sed -i  "2isource ~/.zsh-ext/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+	cd ~
+	sed -i  "2isource ~/.zsh-ext/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" .zshrc
 }
 
 intall-zsh-autosuggestions () {
 	mkdir ~/.zsh-ext
 	cd ~/.zsh-ext
 	git clone https://github.com/zsh-users/zsh-autosuggestions.git
-	sed -i  "2isource ~/.zsh-ext/zsh-autosuggestions/zsh-autosuggestions.zsh"
+	cd ~
+	sed -i  "2isource ~/.zsh-ext/zsh-autosuggestions/zsh-autosuggestions.zsh" .zshrc
 }
 
 intall-zsh-autocomplete () {
 	mkdir ~/.zsh-ext
 	cd ~/.zsh-ext
 	git clone https://github.com/marlonrichert/zsh-autocomplete.git
-	sed -i  "2isource ~/.zsh-ext/zsh-autocomplete/zsh-autocomplete.plugin.zsh"
+	cd ~
+	sed -i  "2isource ~/.zsh-ext/zsh-autocomplete/zsh-autocomplete.plugin.zsh" .zshrc
 }
 
 install-lsd () {
