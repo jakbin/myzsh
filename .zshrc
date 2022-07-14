@@ -58,7 +58,7 @@ alias history="history 0"
     }
 
 # Prompt
-prompt="%B%F{red}┌[%f%F{green}%n%f%F{yellow}㉿%f%F{cyan}%m%f%F{red}]─[%F{magenta}%(6~.%-1~/…/%4~.%5~)%f%F{red}]%f%F{201}"'${vcs_info_msg_0_}'"%f"$'\n'"%F{red}└╼%f%F{yellow}$%f%b"
+prompt="%B%F{red}┌%f"'${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))}'"%F{red}[%f%F{green}%n%f%F{yellow}㉿%f%F{cyan}%m%f%F{red}]─[%F{magenta}%(6~.%-1~/…/%4~.%5~)%f%F{red}]%f%F{201}"'${vcs_info_msg_0_}'"%f"$'\n'"%F{red}└╼%f%F{yellow}$%f%b"
 
 # Export PATH$
 export PATH=~/.local/bin:/snap/bin:/usr/sandbox/:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:$PATH
