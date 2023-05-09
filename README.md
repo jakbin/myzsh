@@ -32,6 +32,10 @@ curl 'https://raw.githubusercontent.com/jakbin/myzsh/main/install.sh' | sh
 wget 'https://raw.githubusercontent.com/jakbin/myzsh/main/plugin-install.sh' && bash plugin-install.sh
 ```
 
+## Tutorial
+[Watch Here](https://youtu.be/8q1NDEKkSf4)
+
+
 ### Screenshts
 
 <p align="center"> <img alt="myzsh" src="screenshots/2021-06-21_13-58.png"> </p>
