@@ -2,7 +2,7 @@
 
 Best vanilla theme for yuor zsh terminal (using without ohmyzsh).
 
-## Here for turmux [Termux-dotfiles](https://github.com/jakbin/termux-dotfiles)
+## Here is for turmux [Termux-dotfiles](https://github.com/jakbin/termux-dotfiles)
 
 ## Features
 
