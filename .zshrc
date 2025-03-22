@@ -179,8 +179,6 @@ alias bat='batcat'
 
 # some more ls aliases
 # alias l='ls -CF'
-# alias ll='ls -lh'
-# alias la='ls -lha'
 alias em='emacs -nw'
 alias dd='dd status=progress'
 alias _='sudo'
@@ -198,15 +196,6 @@ command -v lsd > /dev/null && alias ls='lsd --group-dirs first' && \
 	alias tree='lsd --tree'
 command -v colorls > /dev/null && alias ls='colorls --sd --gs' && \
 	alias tree='colorls --tree'
-
-#####################################################
-# Auto completion / suggestion
-# Mixing zsh-autocomplete and zsh-autosuggestions
-# Requires: zsh-autocomplete (custom packaging by Parrot Team)
-# Jobs: suggest files / foldername / histsory bellow the prompt
-# Requires: zsh-autosuggestions (packaging by Debian Team)
-# Jobs: Fish-like suggestion for command history
-
 
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # source /usr/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
