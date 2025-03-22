@@ -229,5 +229,6 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # alias time="/usr/bin/time -f '\t%E real,\t%U user,\t%S sys,\t%K amem,\t%M mmem'"
 
 # Display last command in terminal
-# echo -en "\e]2;jak Terminal\a"
-# preexec () { print -Pn "\e]0;$1 - jak Terminal\a" }
+echo -en "\e]2;Kali  Terminal\a"
+preexec () { print -Pn "\e]0;$1 - Kali Terminal\a" }
+
