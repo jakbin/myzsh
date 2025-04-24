@@ -1,5 +1,6 @@
 # ~/.zshrc file for zsh non-login shells.
 # see /usr/share/doc/zsh/examples/zshrc for examples
+source /etc/zsh_command_not_found     # command-not-found suggestions for zsh
 
 setopt autocd              # change directory just by typing its name
 setopt correct             # auto correct mistakes
