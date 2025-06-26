@@ -37,8 +37,8 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' # case insensitive tab
 
 # History configurations
 HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=5000
+HISTSIZE=5000                # number of commands to remember (to load in ram) while using terminal from the history file
+SAVEHIST=10000                 # number of commands to save in the history file
 setopt hist_expire_dups_first # delete duplicates first when HISTFILE size exceeds HISTSIZE
 setopt hist_ignore_dups       # ignore duplicated commands history list
 setopt hist_ignore_space      # ignore commands that start with space
@@ -178,6 +178,26 @@ alias grep='grep --color=auto'
 # alias egrep='egrep --color=auto'
 alias bat='batcat'
 
+# System info aliases
+alias meminfo='free -h'
+alias cpuinfo='lscpu'
+alias diskspace='df -h'
+
+# Network aliases
+alias myip='curl ifconfig.me'
+alias ports='netstat -tulanp'
+
+# Human-readable file sizes
+alias df='df -h'
+alias du='du -h'
+
+# Python aliases
+alias py='python3'
+
+# alias for common commands
+alias cls='clear'
+alias h='history'
+
 # some more ls aliases
 # alias l='ls -CF'
 alias em='emacs -nw'
@@ -207,12 +227,6 @@ zstyle ':autocomplete:tab:*' widget-style menu-select
 zstyle ':autocomplete:*' min-input 2
 bindkey $key[Up] up-line-or-history
 bindkey $key[Down] down-line-or-history
-
-
-##################################################
-# Fish like syntax highlighting
-# Requires "zsh-syntax-highlighting" from apt
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Useful alias for benchmarking programs
 # require install package "time" sudo apt install time
